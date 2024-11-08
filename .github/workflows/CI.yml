@@ -39,4 +39,4 @@ jobs:
 
       - name: build del Back
         working-directory: src/Backend/OrderService
-        run: ./gradlew build test
+        run: ./gradlew build test
