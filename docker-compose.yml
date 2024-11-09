@@ -10,8 +10,8 @@ services:  # ahora se indican los servicios por el orden en que se quiere que se
         limits:
           cpus: "0.15"
           memory: 200M
-        restart_policy:
-          condition: on-failure #reinicar el contenedor si falla
+      restart_policy:
+        condition: on-failure #reinicar el contenedor si falla
     ports:
       - "28017:28017" # mapeo el Puerto del contenedor (derecha) con el puerto del host del servicio
       - "27017:27017"
